@@ -1,3 +1,7 @@
-h1 {
-    color: red;
+.box {
+    display: grid;
+    grid-template-columns: 300px auto;
+}
+.box .picture img {
+    width: 40%;
 }

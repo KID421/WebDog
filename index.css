@@ -12,7 +12,7 @@
     width: 100%;
 }
 .box .picture img[src="dog1.jpg"] {
-    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
     border: 18px solid white;
     width: 60%;
     transform: rotate(15deg);

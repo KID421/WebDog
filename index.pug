@@ -1,5 +1,5 @@
 mixin CreateBox(title, content, button, imgName)
-    .box
+    .box(data-aos="fade" data-aos-duration="3000" data-aos-delay="1000")
         .content
             h1=title
             p=content
@@ -31,6 +31,7 @@ html(lang="zh")
     head
         meta(charset="UTF-8")
         title DogLife.
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         link(rel="stylesheet", href="index.css")
     body
         .main
@@ -81,3 +82,7 @@ html(lang="zh")
                     a(href="#") #[img(src="icon-yt.png", alt="youtube")]
             hr
             .copyright KID &copy; 2019
+        | <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        | <script>
+        |   AOS.init();
+        | </script>

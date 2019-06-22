@@ -32,11 +32,27 @@ body {
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 p {
     font-size: 0.7em;
 }
 a {
     font-size: 1em;
+}
+
+/* 按鈕 */
+.button {
+    display: inline-block;
+    background-color: indianred;
+    width: 120px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 60px;
+    color: white;
+    text-decoration: none;
+}
+.button:hover {
+    background-color: #333;
 }

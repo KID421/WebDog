@@ -17,7 +17,7 @@ mixin CreatePrice(className, count, title, price)
         - for (var i=1; i<= count; i++)
             img(src="icon.png")
         h2=title
-        h3=price
+        h3 #[span=price] #[span / year]
         ul
             li 寵物講座
             li 飼料試吃包

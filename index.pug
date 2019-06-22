@@ -12,6 +12,19 @@ mixin CreateTitle(title, content)
         h1=title
         p=content
 
+mixin CreatePrice(className, count, title, price)
+    div(class=className)
+        - for (var i=1; i<= count; i++)
+            img(src="icon.png")
+        h2=title
+        h3=price
+        ul
+            li 寵物講座
+            li 飼料試吃包
+            li 寵物寫真
+            li 寵物旅館
+            li 寵物健康檢查
+
 <!DOCTYPE html>
 html(lang="zh")
     head
@@ -22,8 +35,12 @@ html(lang="zh")
         .main
             include nav.pug
             +CreateBox("我們愛狗", "我們是一群熱愛狗的人士，為了保護與關懷狗建立此網站。", "詳閱", "dog1.jpg")
-            +CreateTitle("歡迎來到我們的網站", "我們是一群熱愛狗的人士，為了保護與關懷狗建立此網站。")
+            +CreateTitle("歡迎來到我們的網站", "在我們的網站內，你可以找到跟寵物相關的資訊。")
             +CreateBox("快樂的寵物", "讓寵物擁有開心的生活空間與品質。", "詳閱", "dog2.jpg")
-            +CreateBox("寵物寫真", "我們提供寵物寫真服務，幫寵物拍得美美的，右邊這隻叫做學長嘉浤。", "詳閱", "dog3.jpg")
-            +CreateTitle("價格表", ".............................")
-            +CreateTitle("聯絡我們", ".........................")
+            +CreateBox("寵物寫真", "我們提供寵物寫真服務，幫寵物拍得美美的，這隻叫做學長嘉浤。", "詳閱", "dog3.jpg")
+            +CreateTitle("價格表", "我們網站提供三種付費服務，您可以根據自己的需求選擇。")
+            .priceBox
+                +CreatePrice("basic", 1, "基本", "500 元")
+                +CreatePrice("premium", 2, "高級", "1000 元")
+                +CreatePrice("professional", 3, "進階", "3000 元")
+            +CreateTitle("聯絡我們", "如果有任何問題，歡迎來信通知我們。")

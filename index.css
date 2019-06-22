@@ -1,8 +1,10 @@
+/* 主要 */
 .main {
     width: 80%;
     margin: 0 auto;
 }
 
+/* 盒子 - 圖片、標題、內文與按鈕 */
 .box {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -19,6 +21,7 @@
     transform: rotate(15deg);
 }
 
+/* 價格 */
 .priceBox {
     background-color: #000;
 }

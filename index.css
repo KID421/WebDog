@@ -27,6 +27,22 @@
 }
 
 /* 價格 */
+.priceBox {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.priceBox h2 {
+    margin: 30px 0;
+}
+.priceBox h3 {
+    margin: 20px 0;
+}
+.priceBox ul li {
+    margin: 10px 0;
+}
+.priceBox a {
+    margin: 10px 0;
+}
 .priceBox div{
     background-color: rgb(150, 50, 50);
     color: white;
@@ -46,6 +62,10 @@
 }
 .priceBox .premium a {
     background-color: rgb(150, 50, 50);
+}
+.priceBox .basic ul li:nth-child(n+3), .priceBox .premium ul li:nth-child(n+5)  {
+    text-decoration: line-through;
+    color: #999
 }
 
 /* 調整文字大小 */

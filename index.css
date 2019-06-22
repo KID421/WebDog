@@ -103,6 +103,9 @@ a {
 ul {
     font-size: 0.8em;
 }
+.copyright {
+    font-size: 0.4em;
+}
 
 /* 按鈕 */
 .button {
@@ -151,4 +154,42 @@ ul {
 }
 .contact .text {
     padding: 0 30px;
+}
+
+/* 頁尾 */
+footer {
+    background-color: indianred;
+    color: white;
+    height: 500px;
+}
+footer .footerBox {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+}
+footer .footerBox h3 {
+    margin-top: 30px;
+}
+footer .footerBox p, footer .footerBox a {
+    color: #eee;
+}
+footer .footerBox ul {
+    list-style: none;
+}
+footer .footerBox img {
+    width: 15px;
+    padding: 30px 10px 0 0;
+}
+footer hr {
+    background-color: #ddd;
+    height: 1px;
+    width: 80%;
+    margin: 0 auto;
+}
+footer .copyright {
+    color: #ddd;
+    text-align: center;
+    padding-top: 50px;
 }

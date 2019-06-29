@@ -193,6 +193,7 @@ footer .copyright {
     text-align: center;
     padding-top: 50px;
 }
+
 /* 手機 */
 @media screen and (max-width: 767px) {
     .box {
@@ -204,6 +205,23 @@ footer .copyright {
     }
     .box .picture {
         margin-top: 30px;
+    }
+
+    .priceBox {
+        grid-template-columns: auto;
+    }
+
+    .contact {
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+
+    footer {
+        height: 700px;
+    }
+    footer .footerBox {
+        grid-template-columns: 100%;
+        text-align: center;
     }
 }
 
@@ -218,6 +236,10 @@ footer .copyright {
     }
     .box .picture {
         margin-top: 50px;
+    }
+
+    .priceBox {
+        grid-template-columns: auto auto;
     }
 }
 
